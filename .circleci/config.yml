@@ -14,7 +14,7 @@
      steps:
        - checkout
        - run: dotnet restore ./AzureBlobPhotos/AzureBlobPhotos.csproj
-       - run: dotnet build
+       - run: dotnet build ./AzureBlobPhotos/AzureBlobPhotos.csproj
        - run: dotnet run --project ./AzureBlobPhotos/AzureBlobPhotos.csproj
       
  workflows:
