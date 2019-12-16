@@ -13,7 +13,7 @@
      
      steps:
        - checkout
-       - run: dotnet restore
+       - run: dotnet restore ./AzureBlobPhotos/AzureBlobPhotos.csproj
        - run: dotnet build
        - run: dotnet run --project ./AzureBlobPhotos/AzureBlobPhotos.csproj
       
